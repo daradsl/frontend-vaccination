@@ -1,11 +1,18 @@
 import { Outlet } from "react-router-dom";
+import {Container, Text} from "@mantine/core";
+
 
 const Home = () => {
 	return(
-		<div>
-			<h1>Bem-vindo ao Sistema de Agendamento de Vacinação contra Covid-19</h1>
+		<Container size={700} px={0} mt={70}>
+			<Text
+				color = "gray"
+				size="lg"
+				weight={700}
+			>
+            Bem-vindo ao Sistema de Agendamento de Vacinação contra Covid-19</Text>
 			<Outlet />
-		</div>
+		</Container>
 	);
 };
 
