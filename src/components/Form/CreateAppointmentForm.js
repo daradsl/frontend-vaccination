@@ -11,11 +11,11 @@ import { showNotification } from "@mantine/notifications";
 import appointmentSchema from "../../validators/SchemaValidator";
 import dayjs from "dayjs";
 import { DatePicker } from "@mantine/dates";
-import hoursOptions from "../../utils/hoursOptions";
+import hourOptions from "../../utils/hourOptions";
 
 const CreateAppointmentForm = () => {
 
-	const hoursOp = hoursOptions();
+	const hoursOp = hourOptions();
 	const nameLs = localStorage.getItem("Nome:");
 	const birthDateLs = localStorage.getItem("Data de Nascimento:");
 	const dateLs = localStorage.getItem("Data do agendamento:");
@@ -39,8 +39,7 @@ const CreateAppointmentForm = () => {
 	return (
 		<Box>
 			<form onSubmit = {form.onSubmit((value) => {
-				console.log("SUBMIT", JSON.stringify(value, null, 2));
-				alert(JSON.stringify(value, null, 2));
+				//alert(JSON.stringify(value, null, 2));
 
 				async function store(){
 					try {
