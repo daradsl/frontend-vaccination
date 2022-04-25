@@ -66,7 +66,7 @@ const CreateAppointmentForm = () => {
 						showNotification({
 							title: "Failed",
 							color: "red",
-							message: message || error.message,
+							message: message || error.message
 						});
 					}
 				}
@@ -112,7 +112,7 @@ const CreateAppointmentForm = () => {
 					/>
 
 					<Button mt={16} type="submit" color="blue">
-              Criar Agendamento
+                        Criar Agendamento
 					</Button>
 				</div>
 			</form> 
