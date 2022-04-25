@@ -59,14 +59,14 @@ const CreateAppointmentForm = () => {
 						});
                     
 					} catch (error) {
-						let message = null;
+						let message = "Error connecting to server.";
 						if(error.response.status === 403){
 							message = error.response.data.message; 
 						}
 						showNotification({
 							title: "Failed",
 							color: "red",
-							message: message || error.message
+							message
 						});
 					}
 				}
