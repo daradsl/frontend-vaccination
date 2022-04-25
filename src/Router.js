@@ -1,3 +1,4 @@
+import Appointment from "./pages/CreateAppointment";
 import Home from "./pages/Home";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Layout from "./components/Layout";

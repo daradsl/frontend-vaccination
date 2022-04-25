@@ -1,8 +1,13 @@
+import { Container } from "@mantine/core";
 import React from "react";
+import CreateAppointmentForm from "../../components/Form/CreateAppointmentForm";
+
 
 const Appointment = () => {
 	return (
-		<h1> criando appointment </h1>
+		< Container>
+			<CreateAppointmentForm />
+		</Container>
 	);
 };
 
