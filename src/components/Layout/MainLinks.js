@@ -1,4 +1,9 @@
 import React from "react";
+import {
+	Book,
+	Home,
+	CalendarTime,
+} from "tabler-icons-react";
 import { ThemeIcon, UnstyledButton, Group, Text } from "@mantine/core";
 import { useNavigate } from "react-router-dom";
 
@@ -28,10 +33,22 @@ function MainLink({ icon, color, label, path }) {
 const routes = [
 	{
 		icon: <Home size={18} />,
-		color: "green",
+		color: "blue",
 		label: "Inicio",
 		path: "/",
 	},
+	{
+		icon: <CalendarTime size={18} />,
+		color: "blue",
+		label: "Criar Agendamento",
+		path: "/newAppointment",
+	},
+	{
+		icon: <Book size={18} />,
+		color: "blue",
+		label: "Visualizar Agendamentos",
+		path: "/listAppointments",
+	}
 ];
 
 export default function MainLinks() {

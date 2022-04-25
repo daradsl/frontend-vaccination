@@ -24,10 +24,10 @@ const Layout = () => {
 				</Navbar>
 			}
 			header={
-				<Header height={60} style={{ backgroundColor: "#008080"}}>
-					<Group sx={{ height: "100%" }} px={20} >
-						<Text  size="md" color="white" align="center">
-                Vacinação contra Covid-19 
+				<Header height={60} style={{ backgroundColor: "#4169E1"}}>
+					<Group sx={{ height: "100%" }} ml={"40%"}>
+						<Text  size="md" color="white">
+							Vacinação contra Covid-19 
 						</Text> <Vaccine color={"white"} size={30}/>
 					</Group>
 				</Header>
